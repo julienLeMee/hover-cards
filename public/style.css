@@ -5,7 +5,7 @@
   background-image: url("../public/assets/image.png");
   border-radius: 8px;
 }
-.cards .card {
+.cards h3 {
   position: absolute;
   bottom: 25px;
   left: 25px;
@@ -13,14 +13,12 @@
   font-size: 32px;
   font-weight: 700;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.cards .card h3 {
   padding: 8px;
   margin: 0;
   background-color: #000000;
   z-index: 10;
 }
-.cards .card h3:hover {
+.cards h3:hover {
   cursor: pointer;
   background-color: transparent;
   transform: translateX(10px);

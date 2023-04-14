@@ -4,7 +4,7 @@
   height: 320px;
   background-image: url('../public/assets/image.png');
   border-radius: 8px;
-  .card {
+  h3 {
     position: absolute;
     bottom: 25px;
     left: 25px;
@@ -12,17 +12,15 @@
     font-size: $font-size;
     font-weight: $font-weight;
     font-family: $font-family;
-    h3 {
-      padding: 8px;
-      margin: 0;
-      background-color: $black;
-      z-index: 10;
-      &:hover {
-        cursor: pointer;
-        background-color: transparent;
-        transform: translateX(10px);
-        transition: all 0.3s ease-in-out;
-      }
+    padding: 8px;
+    margin: 0;
+    background-color: $black;
+    z-index: 10;
+    &:hover {
+      cursor: pointer;
+      background-color: transparent;
+      transform: translateX(10px);
+      transition: all 0.3s ease-in-out;
     }
   }
 }
