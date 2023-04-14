@@ -1,3 +1,29 @@
-
+.cards {
+  position: relative;
+  width: 548px;
+  height: 320px;
+  background-image: url("../public/assets/image.png");
+  border-radius: 8px;
+}
+.cards .card {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.cards .card h3 {
+  margin: 0;
+  background-color: #000000;
+  z-index: 10;
+}
+.cards .card h3:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: translateX(10px);
+  transition: all 0.3s ease-in-out;
+}
 
 /*# sourceMappingURL=style.css.map */
