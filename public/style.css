@@ -15,6 +15,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .cards .card h3 {
+  padding: 8px;
   margin: 0;
   background-color: #000000;
   z-index: 10;
