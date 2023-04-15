@@ -4,6 +4,11 @@
   height: 320px;
   background-image: url('../public/assets/image.png');
   border-radius: 8px;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
   h3 {
     position: absolute;
     bottom: 25px;
