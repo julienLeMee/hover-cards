@@ -2,12 +2,23 @@
   position: relative;
   width: 548px;
   height: 320px;
-  background-image: url("../public/assets/image.png");
   border-radius: 8px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
+}
+.cards .card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.cards .card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
 }
 .cards h3 {
   position: absolute;
@@ -22,28 +33,16 @@
   background-color: #000000;
   z-index: 10;
 }
-.cards h3:hover {
+.cards:hover {
   cursor: pointer;
-  background-color: transparent;
-  transform: translateX(10px);
   transition: all 0.3s ease-in-out;
+  background-color: rgba(128, 185, 39, 0.5);
 }
-.cards .cards::before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -10px;
-  left: -10px;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background-color: #80B927;
+.cards:hover .card__image img {
+  transform: scale(1.1);
 }
-.cards .cards:hover::before {
-  transition: all 0.3s ease-in-out;
-  transform: scale(12);
-  width: 100%;
-  height: 100%;
+.cards:hover .card__content {
+  transform: translateX(20px);
 }
 
 /*# sourceMappingURL=style.css.map */
