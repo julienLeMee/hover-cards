@@ -28,13 +28,13 @@ section {
   display: block;
   font-size: 32px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  transition: 0.5s all ease;
+  transition: 0.3s all ease-in-out;
 }
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s all ease;
+  transition: 0.3s all ease-in-out;
   z-index: -1;
 }
 .card .card__content {
@@ -44,23 +44,26 @@ section {
   bottom: 20px;
   left: 25px;
   color: #FFFFFF;
-  background-color: #000000;
-  padding: 10px;
   z-index: 10;
 }
 .card .card__content h3 {
+  padding: 10px;
+  width: 100%;
+  background-color: #000000;
   margin: 0;
   z-index: 100;
-  transition: 0.7s all ease;
+  transition: 0.3s all ease-in-out;
   font-size: 32px;
   font-weight: 700;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   letter-spacing: 1.5px;
 }
 .card .card__content span {
-  display: none;
+  background-color: #000000;
+  opacity: 0;
   position: absolute;
-  padding: 0 10px;
+  padding: 10px;
+  transition: 0.3s all ease-in-out;
 }
 .card:hover {
   cursor: pointer;
@@ -69,14 +72,13 @@ section {
   transform: scale(1.1);
   filter: grayscale(100%);
 }
-.card:hover .card__content {
+.card:hover h3 {
   background-color: transparent;
-}
-.card:hover .card__content h3 {
   transform: translateX(50px);
 }
-.card:hover .card__content span {
-  display: block;
+.card:hover span {
+  background-color: transparent;
+  opacity: 1;
 }
 .card::before {
   content: "";
@@ -85,7 +87,7 @@ section {
   bottom: -100%;
   left: -100%;
   transform: translate(50%, 50%);
-  transition: all 0.8s ease;
+  transition: all 0.3s ease-in-out;
   border-radius: 50%;
   border: 5px solid #80BA27;
   width: 30px;
