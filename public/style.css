@@ -79,7 +79,7 @@ section {
 }
 .card::before {
   content: "";
-  background-color: rgba(128, 185, 39, 0.5);
+  background-color: rgba(128, 186, 39, 0.5);
   position: absolute;
   bottom: -100%;
   left: -100%;
@@ -95,7 +95,7 @@ section {
 }
 .card::after {
   content: "";
-  background-color: rgba(1, 104, 68, 0.5);
+  background-color: rgba(0, 105, 68, 0.5);
   position: absolute;
   bottom: -100%;
   left: -100%;
